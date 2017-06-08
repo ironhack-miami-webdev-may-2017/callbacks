@@ -1,5 +1,32 @@
 var count = 0;
 
+function everySecond () {
+  count += 1;
+  console.log('Hi. ' + count);
+
+  if (count >= 45) {
+    clearInterval(intervalId);
+  }
+}
+
+var intervalId = setInterval(everySecond, 1000);
+
+
+// ------------------------------------
+
+
+setInterval(function () {
+  console.log('🤺');
+}, 5000);
+
+
+
+// =======================================================================
+
+
+
+var count = 0;
+
 
 function timesUp () {
   count += 1;
